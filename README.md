@@ -4,6 +4,12 @@ genre, a simple and concise `requirements.txt` generator.
 
 When using `pip freeze > requirements.txt`, many indirect dependencies are listed, which is not elegant. This simple tool aims to provide a concise `requirements.txt`, which means it only export direct third-party dependencies or imports in your project.
 
+### Install
+
+`pip install genre`
+
+### Usage
+
 > usage: genre [-h] [-p PACKAGE_DIR] [-v {0,1}]
 >
 > optional arguments:

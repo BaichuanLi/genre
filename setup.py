@@ -1,12 +1,20 @@
 #!/usr/bin/env python
 
+from os import path
+
 from setuptools import setup
 from setuptools import find_packages
 
 
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md')) as f:
+    long_description = f.read()
+
 setup(name='genre',
-      version='0.1.0',
+      version='0.1.1',
       description='a concise and simple requirements.txt generator',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       author='Baichuan Li',
       author_email='baichuan@outlook.com',
       url='https://github.com/BaichuanLi/genre',
