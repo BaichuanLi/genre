@@ -5,7 +5,7 @@ from setuptools import find_packages
 
 
 setup(name='genre',
-      version='0.0.1',
+      version='0.1.0',
       description='a concise and simple requirements.txt generator',
       author='Baichuan Li',
       author_email='baichuan@outlook.com',
