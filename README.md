@@ -21,6 +21,12 @@ When using `pip freeze > requirements.txt`, many indirect dependencies are liste
 
 ### FAQ
 
+Q: Why I am getting the error "command not found: genre" ?
+
+A: genre is supposed to be installed and used in a virtual environment. If you install it in a global python environment, you may add its path to PATH (e.g., in Ubuntu it is "/home/xx/.local/bin/").
+
+
+
 Q: What does "Below are unsure project names (manual check needed)" mean?
 
 A: Normally, this message should not appear in generated `requirements.txt`. If you see it unluckily, it means one third-party import in your project is mapped to multiple packages. Manual check is needed to verify which package(s) is/are real dependency(ies).
